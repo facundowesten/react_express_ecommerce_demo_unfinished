@@ -1,0 +1,141 @@
+.product-card-container{
+    overflow: visible;
+    margin-bottom: 20px;
+    max-height: 400px;
+    
+}
+
+
+.product-card{
+    position: relative;
+    display: flex;
+    width: 100%;
+
+
+
+}
+
+.product-card-body{
+    padding: 1rem;
+
+}
+
+.product-image{
+
+    object-fit: cover;
+    padding: 10px;
+}
+
+.card-structure:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+
+
+.product-card-title{
+    font-family: Roboto,segoe ui,sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+.price{
+    font-family: Roboto,segoe ui,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: red
+}
+
+.product-card-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.product-badge{
+    padding-top: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+
+.brand-logo-container{
+    padding: 1rem;
+}
+.brand-logo{
+    width: 2rem;
+    height: 2rem;
+    object-fit: scale-down;
+}
+
+.card-bottom{
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% + 2px);
+    visibility: hidden;
+
+    opacity: 0;
+
+    box-shadow: 0 15px 8px rgb(0 0 0 / 22%);
+
+    left: -1px;
+    padding: 0.5rem 1rem 1rem;
+    border: 1px solid #c0cd29;
+    border-top: 0;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    z-index: 3;
+
+
+
+}
+
+.product-card-container:hover .card-bottom{
+    visibility: visible;
+    transition: 300ms ease opacity;
+
+    opacity: 1;
+}
+.product-card-container:hover .product-button{
+    display: block;
+    transition: 300ms ease all;
+
+}
+.product-card-container:hover{
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+
+}
+
+.product-button{
+    display: none;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 991px) {
+    .brand-logo{
+
+        object-fit: scale-down;
+    }
+
+    .product-badge{
+        padding: 2px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 1.2rem;
+        border-radius: 0 5px 5px 0;
+        color: #000;
+    }
+    
+}
+

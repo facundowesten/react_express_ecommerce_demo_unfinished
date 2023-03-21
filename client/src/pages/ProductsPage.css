@@ -1,0 +1,15 @@
+.products-list-page-container{
+    padding-top: 2rem;
+display: flex;
+width: 100%;
+flex-grow: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+    .products-list-page-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+    

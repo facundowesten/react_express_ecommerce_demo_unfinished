@@ -1,0 +1,42 @@
+.product-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.product-container > div{
+    max-width: 16%;
+
+
+}
+
+
+@media screen and (max-width: 1199px) {
+    .product-container > div{
+        max-width:  32%;
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .product-container > div{
+        max-width:  32%;
+
+    }
+}
+
+
+
+  @media screen and (max-width: 768px) {
+    .product-container > div{
+        max-width:  48%;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-container > div{
+        max-width: 100%;
+    }
+}
